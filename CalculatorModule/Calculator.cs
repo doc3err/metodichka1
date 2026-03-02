@@ -1,8 +1,10 @@
 ﻿namespace CalculatorModule
 {
-    public class Calculator
+    public void Add_ShouldReturnSum()
     {
-        public int Add(int a, int b) => a + b;
-        public int Subtract(int a, int b) => a - b;
+        var calc = new Calculator();
+        var result = calc.Add(2, 3);
+        Assert.Equal(6, result); // Неправильно, 2+3=5
     }
+
 }
